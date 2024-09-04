@@ -13,7 +13,7 @@ public class Main {
             results[i] = player.play();
         }
 
-        // Uso de IntStream para contar los juegos ganados
+        // contar los juegos ganados
         long wins = IntStream.range(0, results.length)
                 .filter(i -> results[i])
                 .count();
